@@ -1,0 +1,239 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3fbf7; /* professional mint background */
+  color: #164b36; /* deep mint text for readability */
+  line-height: 1.6;
+}
+
+/* ----------------------------------- */
+/* HEADER / NAVBAR */
+/* ----------------------------------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 0;
+  transition: 0.3s ease;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(103, 200, 159, 0.25);
+}
+
+.header.scrolled {
+  background: rgba(103, 200, 159, 0.92); /* darker mint */
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.navbar {
+  width: min(1200px, 92%);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  color: #164b36;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header.scrolled .nav {
+  color: #ffffff;
+}
+
+/* ----------------------------------- */
+/* MENU */
+/* ----------------------------------- */
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.menu li a {
+  position: relative;
+  text-decoration: none;
+  color: #164b36;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.25s ease;
+}
+
+/* UNDERLINE hover - clean & professional */
+.menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #67c89f;
+  transition: width 0.25s ease;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+/* No jiggle hover background */
+.menu li:hover {
+  background: rgba(103, 200, 159, 0.15);
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+.header.scrolled .menu li a {
+  color: #fff;
+}
+
+.header.scrolled .menu li a:hover::after {
+  background: #d9f3e7;
+}
+
+/* MOBILE MENU */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #164b36;
+  cursor: pointer;
+}
+
+.header.scrolled .menu-toggle {
+  color: white;
+}
+
+/* ----------------------------------- */
+/* HERO SECTION */
+/* ----------------------------------- */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #67c89f, #d9f3e7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #164b36;
+  padding: 0 20px;
+}
+
+.hero .container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 32px;
+  background: #67c89f;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: #4fad87;
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------- */
+/* SECTIONS */
+/* ----------------------------------- */
+
+.section,
+.about,
+.contact {
+  padding: 90px 0;
+  text-align: center;
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.sectiontitle {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #164b36;
+}
+
+.sectionsub {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+/* ABOUT */
+.about {
+  background: #67c89f;
+  color: #fff;
+  border-radius: 14px;
+  padding: 100px 40px;
+}
+
+.about .sectiontitle {
+  color: #fff;
+}
+
+/* CONTACT */
+.contact {
+  background: #fff;
+  color: #164b36;
+  border-radius: 14px;
+  padding: 100px 40px;
+}
+
+/* ----------------------------------- */
+/* RESPONSIVE */
+/* ----------------------------------- */
+
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: rgba(103, 200, 159, 0.97);
+    width: 220px;
+    flex-direction: column;
+    padding: 25px;
+    display: none;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li a {
+    color: white;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
