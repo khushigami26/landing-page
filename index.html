@@ -15,7 +15,7 @@
     <!-- Header and Navbar -->
     <header class="header" id="header">
       <nav class="navbar" id="navbar">
-        <a href="#" class="nav">NAVBAR</a>
+        <a href="#" class="nav" style="color: rgb(14, 14, 108)" ;>NAVBAR</a>
 
         <ul class="menu" id="menu">
           <li><a href="#home">HOME</a></li>
@@ -24,41 +24,144 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
 
-        <!-- Added menu toggle button for mobile -->
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="button" id="button">☰</button>
       </nav>
     </header>
 
-    <!-- SECTION -->
+    <!-- HOME SECTION -->
     <section class="hero" id="home">
       <div class="container">
-        <h1>build something new</h1>
-        <p>Modern • Fast • Responsive</p>
-        <a href="#features" class="btn">Features Explore</a>
-      </div>
-    </section>
-
-    <!-- FEATURE SECTION -->
-    <section class="section" id="features">
-      <h2 class="sectiontitle">Features</h2>
-      <p class="sectionsub">Crafted with passion for modern web experiences.</p>
-    </section>
-
-    <!--ABOUT SECTION -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="sectiontitle">About Us</h2>
-        <p class="sectionsub">
-          We create elegant digital solutions for businesses.
+        <h1>Build Something Extraordinary</h1>
+        <p>
+          We help brands and startups create engaging, scalable, and
+          performance-driven digital products.
         </p>
+        <a href="#features" class="btn">Explore Features</a>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- FEATURE  -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="sectiontitle">Our Features</h2>
+        <p class="sectionsub">
+          Crafted with passion for modern web experiences.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Modern UI/UX</h3>
+            <p>
+              Clean, user-friendly interfaces designed to enhance usability and
+              engagement.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>High Performance</h3>
+            <p>
+              Optimized speed, responsiveness, and seamless performance across
+              all devices.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Scalable Solutions</h3>
+            <p>
+              Built with future growth in mind — flexible, modular, and easy to
+              expand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+    <section class="about" id="about">
+      <div class="container about-wrapper">
+        <div class="about-content">
+          <h2 class="sectiontitle">About Us</h2>
+          <p class="about-text">
+            We are a dedicated team of designers, developers, and digital
+            creators delivering modern, scalable, and high-performance solutions
+            for businesses worldwide. Our approach blends creativity,
+            technology, and strategic thinking to turn ideas into exceptional
+            digital experiences.
+          </p>
+
+          <div class="about-points">
+            <div class="point">
+              <h3>Our Vision</h3>
+              <p>
+                To build digital products that inspire innovation and drive
+                business success.
+              </p>
+            </div>
+
+            <div class="point">
+              <h3>Our Mission</h3>
+              <p>
+                To deliver high-quality, user-centric solutions that are clean,
+                modern, and future-ready.
+              </p>
+            </div>
+
+            <div class="point">
+              <h3>Our Values</h3>
+              <p>
+                Integrity, creativity, commitment, and excellence in every
+                project we deliver.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="stat-content">
+            <h2>10+</h2>
+            <p>Years Experience</p>
+          </div>
+
+          <div class="stat-content">
+            <h2>100+</h2>
+            <p>Successful Projects</p>
+          </div>
+
+          <div class="stat-content">
+            <h2>50+</h2>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="stat-content">
+            <h2>12+</h2>
+            <p>Countries Served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
     <section class="contact" id="contact">
       <div class="container">
         <h2 class="sectiontitle">Contact Us</h2>
-        <p class="sectionsub">We're here to help.</p>
+        <p class="sectionsub">
+          Have a project in mind? We’d love to hear from you.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Email:</strong> support@mywebsite.com</p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+            <p><strong>Address:</strong> Morvi, Gujarat, India</p>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn form-btn">Send Message</button>
+          </form>
+        </div>
       </div>
     </section>
 
