@@ -1,14 +1,13 @@
-//navbar scroll
-const header = document.getElementById("header");
+//  Menu Toggle
+const toggleBtn = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
 
-window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 50);
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
 
-//menu toggle
-const navMenu = document.getElementById("menu");
-const menuToggle = document.getElementById("menu-toggle");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+// Navbar Scroll
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("header");
+  header.classList.toggle("scrolled", window.scrollY > 30);
 });
