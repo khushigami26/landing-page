@@ -41,3 +41,5 @@ This project focuses on improving front-end UI/UX, interactivity, and responsive
 
 ![Screenshot 1](./screenshots/screen1.png)  
 ![Screenshot 2](./screenshots/screen2.png)
+![Screenshot 3](./screenshots/screen3.png)  
+![Screenshot 4](./screenshots/screen4.png)
